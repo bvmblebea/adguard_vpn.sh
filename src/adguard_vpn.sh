@@ -76,3 +76,11 @@ function get_locations() {
 		--user-agent "$user_agent" \
 		--header "content-type: application/json"
 }
+
+function confirm_url() {
+	# 1 - verification_url: (string): <verification_url>
+	curl --request GET \
+		--url "$1" \
+		--user-agent "$user_agent" \
+		--header "content-type: application/json"
+}
